@@ -68,6 +68,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+
   Deploy-to-Azure:
     runs-on: ubuntu-latest
     needs: Build-Docker-Image
